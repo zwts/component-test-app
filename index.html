@@ -19,20 +19,36 @@
   <script defer src="js/app.js" ></script>
 </head>
 <body class="theme-settings">
-<h1>Test gaia tabs</h1>
-<gaia-tabs style="transform: translateX(0px);" role="tablist" class="h3" underline="child" selected="0" position="top" id="tablist">
-  <a aria-selected="true" class="selected" role="tab" id="all-filter">
-    <span aria-label="All" data-l10n-id="all">All</span>
-  </a>
-  <a class="" role="tab" id="missed-filter">
-    <span aria-label="Missed" data-l10n-id="missed">Missed</span>
-  </a>
-  <a class="" role="tab" id="dialed-filter">
-    <span data-l10n-id="dialed">Dialed</span>
-  </a>
-  <a role="tab" id="received-filter">
-    <span data-l10n-id="received">Received</span>
-  </a>
-</gaia-tabs>
+<div id="main-title">Component test app</div>
+<nav id="tab-list">
+  <gaia-tabs style="transform: translateX(0px);" role="tablist" class="h3" underline="child" selected="0" position="top" id="tablist">
+    <a class="selected" role="tab">
+      <span>one</span>
+    </a>
+    <a class="" role="tab">
+      <span>two</span>
+    </a>
+    <a class="" role="tab">
+      <span>three</span>
+    </a>
+    <a class="" role="tab">
+      <span>four</span>
+    </a>
+  </gaia-tabs>
+</nav>
+<div class="panes">
+  <section class="pane selected" role="tabpanel">
+    <span>beautiful Jessi</span>
+  </section>
+  <section class="pane" role="tabpanel">
+    <span>handsome Willy</span>
+  </section>
+  <section class="pane" role="tabpanel">
+    <span>handsome Erwin</span>
+  </section>
+  <section class="pane" role="tabpanel">
+    <span>handsome Fransisco</span>
+  </section>
+</div>
 </body>
 </html>

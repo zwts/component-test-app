@@ -8,6 +8,36 @@ body {
   overflow: hidden;
 }
 
+#main-title {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  text-align: center;
+  color: var(--color-gs00);
+  font-size: 1.7rem;
+  font-weight: 300;
+  background-color: var(--header-background);
+  overflow: auto;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.pane {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: visibility 300ms;
+  visibility: hidden;
+}
+
+.pane.selected {
+  visibility: visible;
+}
+
 iframe {
   border: none;
   width: 100%;
