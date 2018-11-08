@@ -1,0 +1,23 @@
+{
+  "name": "testapp",
+  "type": "privileged",
+  "launch_path": "/index.html",
+  "description": "test gaia tabs",
+  "developer": {
+    "url": "https://github.com/mozilla-b2g/gaia",
+    "name": "The Gaia Team"
+   },
+  "orientation": "portrait-primary",
+  "icons": {
+    "120": "/style/icons/auto_120.png",
+    "60": "/style/icons/auto_60.png"
+  },
+  "permissions": {},
+  "default_locale": "en-US",
+  "locales": {
+    "en-US": {
+      "name": "Engmode",
+      "description": "Engmode"
+    }
+  }
+}
