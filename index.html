@@ -11,11 +11,13 @@
   <link rel="stylesheet" type="text/css" href="shared/elements/gaia-icons/gaia-icons.css">
   <link rel="stylesheet" type="text/css" href="shared/elements/gaia-theme/gaia-theme.css">
   <link rel="stylesheet" type="text/css" href="shared/elements/gaia_tabs/style.css">
+  <link rel="stylesheet" type="text/css" href="shared/style/input_areas.css"/>
 
   <!--JavaScript-->
   <script defer src="shared/elements/gaia_tabs/script.js" ></script>
   <script defer src="shared/js/component_utils.js" ></script>
 
+  <script defer src="js/simple-navigation-helper.js" ></script>
   <script defer src="js/app.js" ></script>
 </head>
 <body class="theme-settings">
@@ -37,16 +39,32 @@
   </gaia-tabs>
 </nav>
 <div class="panes">
-  <section class="pane selected" role="tabpanel">
-    <span>beautiful Jessi</span>
+  <section class="pane selected pane-one"  data-name="one" role="tabpanel">
+    <ul  class="nav-container" tabindex="1">
+      <li id="ap-settings" class="focusable" tabindex="1">
+        <p>Lion Cap</p>
+      </li>
+      <li id="follow" class="focusable" tabindex="1">
+        <div>
+          <label class="pack-checkbox">
+            <input id="follow-switch" type="checkbox"/>
+            <span class="label-span">Follow</span>
+          </label>
+        </div>
+      </li>
+      <li class="input-li" id="height">
+        <span class="p-sec">Bid</span>
+        <input type="text" id="height-input" value="" size="8" maxlength="8" x-inputmode="digit" tabindex="1" class="focusable"></input>
+      </li>
+    </ul>
   </section>
-  <section class="pane" role="tabpanel">
+  <section class="pane pane-two nav-container" data-name="two"  role="tabpanel">
     <span>handsome Willy</span>
   </section>
-  <section class="pane" role="tabpanel">
+  <section class="pane pane-three nav-container" data-name="three" role="tabpanel">
     <span>handsome Erwin</span>
   </section>
-  <section class="pane" role="tabpanel">
+  <section class="pane pane-four nav-container" data-name="four" role="tabpanel">
     <span>handsome Fransisco</span>
   </section>
 </div>
